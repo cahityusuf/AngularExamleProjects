@@ -67,38 +67,49 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# dotenv environment variables file
-.env
-.env.test
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
 
-# parcel-bundler cache (https://parceljs.org/)
-.cache
+# dependencies
+/node_modules
 
-# Next.js build output
-.next
+# profiling files
+chrome-profiler-events*.json
 
-# Nuxt.js build / generate output
-.nuxt
-dist
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-# Gatsby files
-.cache/
-# Comment in the public line in if your project uses Gatsby and *not* Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
-# public
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
 
-# vuepress build output
-.vuepress/dist
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
 
-# Serverless directories
-.serverless/
+# System Files
+.DS_Store
+Thumbs.db
 
-# FuseBox cache
-.fusebox/
-
-# DynamoDB Local files
-.dynamodb/
-
-# TernJS port file
-.tern-port
